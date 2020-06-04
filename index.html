@@ -4,7 +4,153 @@
     <meta charset="UTF-8">
     <title>HTML</title>
 </head>
+<style>
+    *{
+        list-style: none;
+        text-decoration: none;
+        font-style : normal;
+    }
+    em{
+        margin:0 10px 0 10px;
+    }
+   
+</style>
 <body>
-
+<div class = "wrapper">
+    <div class = "Title">
+        <div class = "Head">
+            <h1>Unified Modeling Language Theory Test</h1>
+        </div>
+        <div class = "info">
+            <div class = "test-info">
+              Test Subject : <em>Unified Modeling Language</em>
+              Time:<em >100 minute</em>
+              Score:<em>100</em>
+            </div>
+            <div class = "stu-info" style="margin:8px 0 0 0;">
+                Class : <input type="text" name="class" value ="Class 1" />
+                Student ID : <input type="text" name="id" value = "001"/>
+                Nmae : <input type="text" name="name" value="Darcy"/>
+            </div>
+        </div>
+    </div>
+    <form methods="post">
+    <div class = "first">
+        <h1>1、Fill in the blank(5 points per space,20 points total)</h1>
+        <div class="first-content">
+            <p class = "first-1">1.The full name of UML in Chinese is : <input id="fullName" type="text" value="Unified Modeling Language"/></p>
+            <p class = "first-2">2.The mose eprominent feature of the object is : 
+                <input id = "feature1" type="text" value = "Encapsulation"/>
+                <input id = "feature2" type="text" value = "Inheritance"/>
+                <input id = "feature3" type="text" value = "Polymorphism"/>
+            </p>
+        </div>
+    </div>
+    <div class = "second">
+        <h1>2、Multiple choice question(10 points per space, 20 points total)</h1>
+            <div class = "second-1">
+                <p class = "second-1-question">1.The relationship between UML and software engineering is:</p>
+                <div class="second-4-select1">
+                    <p><input type="radio" name="select1" id="1-A" value = "A"/><label for="1-A">(A)UML is software engineering</label></p>
+                    <p><input type="radio" name="select1" id="1-B" value = "B" checked/><label for="1-B">(B)UML participates in several stages of the software development process in software engineering</label></p>
+                    <p><input type="radio" name="select1" id="1-C" value = "C"/><label for="1-C">(C)UML has nothing to do with software engineering</label></p>
+                    <p><input type="radio" name="select1" id="1-D" value = "D"/><label for="1-D">(D)UML is part of software engineering</label></p>
+                </div>
+            </div>
+            <div class = "second-2">
+                <p class = "second-2-question">2.Java language support:</p>
+                <div class="second-4-select2">
+                    <p><input type="radio" name="select2" id="2-A"  value = "A" checked/><label for="2-A">(A)Single inheritance</label></p>
+                    <p><input type="radio" name="select2" id="2-B"  value = "B" /><label for="2-B">(B)Multiple inheritance</label></p>
+                    <p><input type="radio" name="select2" id="2-C"  value = "C" /><label for="2-C">(C)Single inheritance and multiple inheritance support</label></p>
+                    <p><input type="radio" name="select2" id="2-D"  value = "D" /><label for="2-D">(D)Single inheritance and multiple inheritance are not supported</label></p>
+                </div>
+            </div>
+    </div>
+    <div class = "third">
+        <h1>3、Multiple choice(10points per space,20 points total)</h1>
+        <div class="third-1">
+           <p class = "third-1-qustion">1.The granularity of the use case is divied into the following three:</p>
+           <div class="third-4-select1">
+               <p><input type="checkbox" name="test1" id="3-A" checked><label for="3-A">Overview level</label></p>
+               <p><input type="checkbox" name="test1" id="3-B" checked><label for="3-B">Demand level</label></p>
+               <p><input type="checkbox" name="test1" id="3-C"><label for="3-C">User target level</label></p>
+               <p><input type="checkbox" name="test1" id="3-D" checked><label for="3-D">Sub-function level</label></p>
+           </div>
+        </div>
+        <div class="third-2">
+            <p class = "third-2-qustion">2.The class diagram consist of which oof the following three parts:</p>
+            <div class="third-4-select2">
+                <div class="third-4-select1">
+                    <p><input type="checkbox" name="test2" id="4-A" checked><label for="4-A">Name</label></p>
+                    <p><input type="checkbox" name="test2" id="4-B" checked><label for="4-B">Attribute</label></p>
+                    <p><input type="checkbox" name="test2" id="4-C" checked><label for="4-C">Operation</label></p>
+                    <p><input type="checkbox" name="test2" id="4-D" ><label for="4-D">Function</label></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fourth">
+        <h1>4、True of False(10 points per space,20 points total)</h1>
+        <p>
+            1.Use case diagrams are only used to communicate and communicate with customers to determine demand。
+            <input type="radio" name="4-1" id = "true-1"><label for="true-1">√</label>
+            <input type="radio" name="4-1"id = "false-1" checked><label for="false-1">×</label>
+        </p>
+        <p>
+            2.In the state diagram,the termination state allows any number of multiples in a state diagram。
+            <input type="radio" name="4-2" id ="true-2" checked><label for="true-2">√</label>
+            <input type="radio" name="4-2" id ="false-2"><label for="false-2">×</label>
+        </p>
+    </div>
+    <div class="fifth">
+        <h1>5、Short answer question(20 points per space,20 points total)</h1>
+        <div class="fifth-content">
+            <p>1.Briefly describe what the model is and how it behaves?</p>
+            <textarea id="textarea" name="text"  cols="110" rows="10">
+            A model is simplification and abstraction of the real world.A model is an expression of the system,
+            process,thing or concept of research.Can be a physical entity;can be a certain graphic,or a mathematical
+            expression.
+            </textarea>
+        </div>
+    </div>
+    <div class='btn'>
+        <button id="cal-btn"type='submit' >Calculating Score</button>
+    </div>
+</form>
+</div>
 </body>
+
+<script>
+    var LastScore = 0;
+    var question1 = document.getElementById("fullName");
+    var question2 = document.getElementById("feature1");
+    var question3 = document.getElementById("feature2");
+    var question4 = document.getElementById("feature3");
+    var question5 = document.getElementsByName("select1")[1];
+    var question6 = document.getElementsByName("select2")[0];
+    var question7 = document.getElementsByName("test1");
+    var question8 = document.getElementsByName("test2");
+    var question9 = document.getElementsByName("4-1");
+    var question10 = document.getElementsByName("4-2");
+    var question11 = document.getElementById("textarea");
+    var btn = document.getElementById("cal-btn");
+
+    function Calculating(){
+        if(question1.value == "Unified Modeling Language") LastScore += 5;
+        if(question2.value == "Encapsulation") LastScore += 5;
+        if(question3.value == "Inheritance") LastScore += 5;
+        if(question4.value == "Polymorphism") LastScore += 5;
+        if(question5.checked) LastScore += 10;
+        if(question6.checked) LastScore += 10;
+        if(question7[0].checked && !question7[2].checked && question7[1].checked && question7[3].checked) LastScore += 10;
+        if(question8[0].checked && question8[2].checked && question8[1].checked && !question8[3].checked) LastScore += 10;
+        if(question9[1].checked) LastScore += 10;
+        if(question10[0].checked) LastScore += 10;
+        if(question11.value != "" && question11 != null) LastScore += 20;
+        alert("最终得分为:" + LastScore)
+    }
+    btn.addEventListener('click' , Calculating ,false)
+</script>
+
 </html>
